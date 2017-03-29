@@ -8,8 +8,11 @@
  * Controller of the wanderApp
  */
 angular.module('wanderApp')
-  .controller('MainCtrl', ['$scope', function ($scope) {
+  .controller('MainCtrl', ['$scope', '$location', function ($scope, $location) {
+    $scope.gPlace;
+
     $scope.setDestination = function() {
       console.log($scope.city);
+      $location.path('/destination/hi');
     };
   }]);

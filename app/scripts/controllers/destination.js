@@ -8,6 +8,6 @@
  * Controller of the wanderApp
  */
 angular.module('wanderApp')
-  .controller('DestinationCtrl', ['$scope', function ($scope) {
-    
+  .controller('DestinationCtrl', ['$scope', '$routeParams', '$location', function ($scope, $routeParams, $location) {
+    var city = $routeParams.city;
   }]);
